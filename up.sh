@@ -7,7 +7,7 @@ function pushThis () {
 	git commit -m "$message"
 	echo "Are you sure you wanna push? (y/n)"
 	read -e yn
-	if [ "$yn" = y ]; then
+	if [ "$yn" = y ] || [ "$yn" = Y ]; then
   		git push
 	else
   		echo "See you!"
